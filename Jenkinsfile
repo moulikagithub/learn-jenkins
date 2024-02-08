@@ -28,6 +28,7 @@ pipeline {
                 sh """
                     echo "running shell script"
                     echo "$greeting"
+                    sleep 10
                 """
             }
         }
