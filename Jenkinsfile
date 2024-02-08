@@ -22,16 +22,19 @@ pipeline {
             }
         }
     }
-}
-// post build
- post { 
+    // post build
+    post { 
         always { 
             echo 'I will always say Hello again!'
         }
         failure { 
-            echo 'this runs when pipeline fails ,generally used to send alert incase of failure'
+            echo 'runs when their is failure'
         }
         success { 
-            echo 'this runs when pipeline is success'
+            echo 'runs when success!'
         }
     }
+}
+
+
+     
