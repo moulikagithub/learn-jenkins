@@ -8,7 +8,8 @@ pipeline {
         greeting = 'morning'
     }
     options {
-                timeout(time: 1, unit: 'SECONDS') 
+                timeout(time: 1, unit: 'SECONDS')
+                disableConcurrentBuilds() 
             }
     // build
     stages {
